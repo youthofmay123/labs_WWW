@@ -1,0 +1,68 @@
+/* Reset một số kiểu mặc định */
+body, h1, form, input {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Định dạng tổng thể */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+/* Định dạng tiêu đề */
+h1 {
+    color: #4CAF50; /* Màu xanh lá cây */
+    text-align: center;
+}
+
+/* Định dạng form */
+form {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 0 auto; /* Để form ở giữa trang */
+}
+
+/* Định dạng input */
+input[type="text"],
+input[type="hidden"],
+input[type="submit"],
+input[type="reset"] {
+    width: 100%; /* Chiếm toàn bộ chiều rộng */
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Định dạng button */
+input[type="submit"],
+input[type="reset"] {
+    background-color: #4CAF50; /* Màu xanh lá cây */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #45a049;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    width: 48%; /* Chiếm 48% chiều rộng */
+}
+
+/* Định dạng cho div chứa các button */
+div {
+    display: flex;
+    justify-content: space-between; /* Đưa các button cách đều nhau */
+}
