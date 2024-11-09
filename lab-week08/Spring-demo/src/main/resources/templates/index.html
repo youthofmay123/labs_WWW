@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+<h1>
+    <form action="#" th:action="@{/sample/sum}" method="post">
+        <input type="number" name="a" th:value="${a}" step="any">
+        +
+        <input type="number" name="b" th:value="${b}" step="any">
+        =
+        <span th:text="${result}"></span>
+        <input type="submit" value="Tính tổng">
+    </form>
+</h1>
+</body>
+</html>
+
